@@ -1,6 +1,7 @@
-/* $(function () {
+/*  $(function () {
   $("#load").click(sendAJAX);
 });
+
 function sendAJAX() {
     console.log("AJAX resquest sending");
     // below is asyncronous call
@@ -13,11 +14,12 @@ function handleResponse(response) {
     console.log("response received");
     // console.log(response);
     // $("#results").empty(); 
-    $("#results").append("\n");
+    $("#results").append("<br>");
     $("#results").append(response);
 }
- */
+  */
 // modified code (simple/may be complex but clean and smaller)
+
 $(function () {
   $("#load").click(function () {
     $.get("students.txt", function (response) {
@@ -27,3 +29,4 @@ $(function () {
     });
   });
 });
+
